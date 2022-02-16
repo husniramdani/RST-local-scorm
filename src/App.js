@@ -26,7 +26,7 @@ const manifest6 = "/scorm/visi/imsmanifest.xml"
 
 let settings = {
   logLevel: 4,
-  // mastery_override: true,
+  mastery_override: true,
   // selfReportSessionTime: true,
   // alwaysSendTotalTime: true,
   // autoCommit: false,
@@ -50,7 +50,7 @@ var json = {
     "student_name": "Nanang The Builder",
     "lesson_location": "Rangkuman",
     "credit": "",
-    "lesson_status": "incomplete",
+    "lesson_status": "not attempted",
     "entry": "",
     "lesson_mode": "normal",
     "exit": "suspend",
@@ -152,6 +152,9 @@ class App extends React.Component {
       // console.log("finish")
       scorm_result.track_completion = true;
       scorm_result.score = window.API.cmi.core.score;
+      if (window.API.cmi.core.lesson_status === "incomplete") {
+        window.API.LMSSetValue("cmi.core.lesson_status", "completed");
+      }
       getScormResult(scorm_result);
       window.API.clear("LMSInitialize");
     });
