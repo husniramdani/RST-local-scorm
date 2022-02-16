@@ -1,0 +1,35 @@
+{
+  "suspend_data": "N4IgriBcCMA0IGUqgM4AdkgI5QNoCZYBmWAFlgFYBdeFPOQk86+Ac0wAZM7JRpMAblDggAlgDth8ALZQOtOfAA2ikAGNkAX03x8g1RNWzI8kD1MqT8DbxBdb5nSH4O5Tva5Pb4EK2YDWbvBE+n6Gfsam5sqqNqD2qEHO3EkeiV5OvlGBXvCkoabhppEKfpamcXYpucmeHO7V9ZmqKDn18BQF8EUyLarl1pgATlAgIM1+rW7aTjbtIMYgAC4ApihLEuzwS1AU8EK2YCgrQwD64gCG0iujAHIXl+KsAAQAKgAWK88AQmCiSgATE4gHzHM4raQXf6jEHgMGiAGjaD4EIzIA",
+  "launch_data": "",
+  "comments": "",
+  "comments_from_lms": "",
+  "core": {
+    "student_id": "123",
+    "student_name": "Nanang The Builder",
+    "lesson_location": "",
+    "credit": "",
+    "lesson_status": "incomplete",
+    "entry": "",
+    "lesson_mode": "normal",
+    "exit": "suspend",
+    "session_time": "00:00:00",
+    "score": {
+      "raw": "0",
+      "min": "0",
+      "max": "100"
+    }
+  },
+  "objectives": {},
+  "student_data": {
+    "mastery_score": "",
+    "max_time_allowed": "",
+    "time_limit_action": ""
+  },
+  "student_preference": {
+    "audio": "",
+    "language": "",
+    "speed": "",
+    "text": ""
+  },
+  "interactions": {}
+}

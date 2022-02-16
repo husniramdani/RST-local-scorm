@@ -1,0 +1,55 @@
+{
+  "suspend_data": "2i5c60708090a0b0DC1001512u010120111201212013120141201512G101^1^v_player.6MdNfgnZ6cO.6dTnxCg5TeX1^1^00~2E3~2y3cb101001a1a1035w0~2d2340034003400r78000141^h_default_Disabledr78000141^h_default_Disabledr78000141^h_default_DisabledA780401c1^q_default_Selected_Disabled34003400YV2$tP3400340034003400q70020181^g_default_Visited340034000000000002000",
+  "launch_data": "",
+  "comments": "",
+  "comments_from_lms": "",
+  "core": {
+    "student_id": "123",
+    "student_name": "Nanang The Builder",
+    "lesson_location": "Rangkuman",
+    "credit": "",
+    "lesson_status": "incomplete",
+    "entry": "",
+    "lesson_mode": "normal",
+    "exit": "suspend",
+    "session_time": "0000:00:12.82",
+    "score": {
+      "raw": "50",
+      "min": "0",
+      "max": "100"
+    }
+  },
+  "objectives": {},
+  "student_data": {
+    "mastery_score": "",
+    "max_time_allowed": "",
+    "time_limit_action": ""
+  },
+  "student_preference": {
+    "audio": "",
+    "language": "",
+    "speed": "",
+    "text": ""
+  },
+  "interactions": {
+    "0": {
+      "id": "Scene1_Slide5_MultiChoice_0_0",
+      "time": "18:12:08",
+      "type": "choice",
+      "weighting": "1",
+      "student_response": "Correct",
+      "result": "correct",
+      "latency": "0000:00:05.84",
+      "objectives": {
+        "0": {
+          "id": "SL360 LMS SCORM 1.2"
+        }
+      },
+      "correct_responses": {
+        "0": {
+          "pattern": "Correct"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "suspend_data": "b0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP0A%24nP1A%24nP%24kBRText_Entry_Box_10BARText_Entry_Box_11BASText_Entry_Box_111BARText_Entry_Box_12BARText_Entry_Box_13BARText_Entry_Box_14BARText_Entry_Box_15BARText_Entry_Box_16BARText_Entry_Box_17BARText_Entry_Box_18BARText_Entry_Box_19BARText_Entry_Box_20BARText_Entry_Box_21BARText_Entry_Box_22BARText_Entry_Box_23BARText_Entry_Box_24BARText_Entry_Box_25BARText_Entry_Box_26BARText_Entry_Box_27BARText_Entry_Box_28BARText_Entry_Box_29BAQText_Entry_Box_3BARText_Entry_Box_30BARText_Entry_Box_31BARText_Entry_Box_32BARText_Entry_Box_33BARText_Entry_Box_34BARText_Entry_Box_35BARText_Entry_Box_36BARText_Entry_Box_37BARText_Entry_Box_38BARText_Entry_Box_39BAQText_Entry_Box_4BARText_Entry_Box_40BARText_Entry_Box_41BARText_Entry_Box_42BARText_Entry_Box_43BAQText_Entry_Box_5BAQText_Entry_Box_6BAQText_Entry_Box_7BAQText_Entry_Box_8BAQText_Entry_Box_9BATVar_Rangkuman_Ikon1BBTVar_Rangkuman_Ikon2BALVar_rangk_1BBLVar_rangk_2BBbVariable_closebutton_keluarBAaVariable_closebutton_masukBATcpQuizInfoStudentIDBAVcpQuizInfoStudentNameASNanang%20The%20BuilderKindex_var1BAKindex_var2BAKindex_var3BAKindex_var4BAKindex_var5BAKindex_var6BAKindex_var7BAKindex_var8BAOs10_VarButton1BAOs10_VarButton2BAOs10_VarButton3BAMs10_variableBAHs11_varBAIs11_var2BAOs11_var_keluarBANs11_var_masukBAHs12_varBAOs13_VarButton1BAOs13_VarButton2BAOs13_VarButton3BAOs13_VarButton4BAHs13_varBAHs14_varBAIs14_var1BAIs15_var1BAHs16_varBAOs19_VarButton1BAOs19_VarButton2BAOs19_VarButton3BAMs1_variable1BAMs2_variable1BALs3_variableBAMs4_variable1BAMs5_variable1BAHs6_var1BAHs6_var2BAHs6_var3BAHs6_var4BALs6_variableBALs7_variableBANs8_VarButton1BANs8_VarButton2BANs8_VarButton3BANs8_VarButton4BALs8_variableBALs9_variableBALv_btn_cepatBAOv_btn_estimasiBALv_btn_murahBAQcpQuizHandledAllBA$_#-#_$",
+  "launch_data": "",
+  "comments": "",
+  "comments_from_lms": "",
+  "core": {
+    "student_id": "123",
+    "student_name": "Nanang The Builder",
+    "lesson_location": "Rangkuman",
+    "credit": "",
+    "lesson_status": "incomplete",
+    "entry": "",
+    "lesson_mode": "normal",
+    "exit": "suspend",
+    "session_time": "0000:00:12.82",
+    "score": {
+      "raw": "0",
+      "min": "0",
+      "max": "100"
+    }
+  },
+  "objectives": {},
+  "student_data": {
+    "mastery_score": "",
+    "max_time_allowed": "",
+    "time_limit_action": ""
+  },
+  "student_preference": {
+    "audio": "",
+    "language": "",
+    "speed": "",
+    "text": ""
+  },
+  "interactions": {}
+}
