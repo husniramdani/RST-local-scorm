@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema targetNamespace="http://knowbe4.com/xsd/btb"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://knowbe4.com/xsd/btb"
+            elementFormDefault="qualified">
+
+    <xsd:element name="configuration">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="builderInfo">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="arch" type="xsd:string"/>
+                            <xsd:element name="hash" type="xsd:string"/>
+                            <xsd:element name="version" type="xsd:string"/>
+                            <xsd:element name="tag" type="xsd:string"/>
+                            <xsd:element name="timestamp" type="xsd:string"/>
+                            <xsd:element name="platform" type="xsd:string"/>
+                            <xsd:element name="goVersion" type="xsd:string"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="courseInfo">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="hash" type="xsd:string"/>
+                            <xsd:element name="localization" type="xsd:string"/>
+                            <xsd:element name="version" type="xsd:string"/>
+                            <xsd:element name="tag" type="xsd:string"/>
+                            <xsd:element name="timestamp" type="xsd:string"/>
+                            <xsd:element name="nodeVersion" type="xsd:string"/>
+                            <xsd:element name="yarnVersion" type="xsd:string"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="debug" type="xsd:boolean"/>
+                <xsd:element name="format" type="xsd:string"/>
+                <xsd:element name="passingScore" type="xsd:decimal"/>
+                <xsd:element name="playerInfo">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="hash" type="xsd:string"/>
+                            <xsd:element name="version" type="xsd:string"/>
+                            <xsd:element name="tag" type="xsd:string"/>
+                            <xsd:element name="timestamp" type="xsd:string"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="scormless" type="xsd:boolean"/>
+                <xsd:element name="skipMode" type="xsd:string"/>
+                <xsd:element name="themeable" type="xsd:string"/>
+                <xsd:element name="title" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

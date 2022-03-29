@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!-- 
+Manifest template to demonstrate the proper XML namespace declarations for
+SCORM 1.2 manifests. 
+
+Provided by Rustici Software - www.scorm.com.
+-->
+<manifest identifier="com.knowbe4.courses.btb.uuid.ac90615b-96cf-4962-8d47-a74709f5dcb7" version="1"
+       xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+       xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:btb="http://knowbe4.com/xsd/btb"
+       xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                           http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+                           http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd
+                           http://knowbe4.com/xsd/btb btb.xsd">
+	<metadata>
+		<schema>ADL SCORM</schema>
+		<schemaversion>1.2</schemaversion>
+		<btb:configuration>
+			<btb:builderInfo>
+				<btb:arch>amd64</btb:arch>
+				<btb:hash>349e93bce74f5c7f1b54dec2d543320dd3224374</btb:hash>
+				<btb:version>4.0.1</btb:version>
+				<btb:tag>v4.0.1</btb:tag>
+				<btb:timestamp>2021-08-26T19:01:23Z</btb:timestamp>
+				<btb:platform>darwin</btb:platform>
+				<btb:goVersion>go1.14.2</btb:goVersion>
+			</btb:builderInfo>
+			<btb:courseInfo>
+				<btb:hash>b0593972089bcb4c3452540cde1154605c81374e</btb:hash>
+				<btb:localization>en-US</btb:localization>
+				<btb:version>1.0.14</btb:version>
+				<btb:tag>v1.0.14</btb:tag>
+				<btb:timestamp>2021-09-17T19:25:34Z</btb:timestamp>
+				<btb:nodeVersion>13.13.0</btb:nodeVersion>
+				<btb:yarnVersion>1.22.11</btb:yarnVersion>
+			</btb:courseInfo>
+			<btb:debug>true</btb:debug>
+			<btb:format>scorm-1.2</btb:format>
+			<btb:passingScore>0.8</btb:passingScore>
+			<btb:playerInfo>
+				<btb:hash>e49a0e53d95d825d8a98bf3e22356fb0059b66ce</btb:hash>
+				<btb:version>4.0.1+qa</btb:version>
+				<btb:tag>4.0.1</btb:tag>
+				<btb:timestamp>2021-08-20T16:56:42Z</btb:timestamp>
+			</btb:playerInfo>
+			<btb:scormless>false</btb:scormless>
+			<btb:skipMode>video-skip</btb:skipMode>
+			<btb:themeable>true</btb:themeable>
+			<btb:title>KnowBe4 Sample Course</btb:title>
+		</btb:configuration>
+	</metadata>
+	<organizations default="com.knowbe4.courses.btb.uuid.c9a41ad7-cadc-464d-b3f6-be65ba2f65fd">
+		<organization identifier="com.knowbe4.courses.btb.uuid.c9a41ad7-cadc-464d-b3f6-be65ba2f65fd">
+			<title>KnowBe4 Sample Course</title>
+			<item identifier="i1" identifierref="r1" isvisible="true">
+				<title>KnowBe4 Sample Course</title>
+				<adlcp:masteryscore>80</adlcp:masteryscore>
+			</item>
+		</organization>
+	</organizations>
+	<resources>
+		<resource identifier="r1" type="webcontent" adlcp:scormtype="sco" href="index.html">
+			<file href="index.html" />
+		</resource>
+	</resources>
+</manifest>
