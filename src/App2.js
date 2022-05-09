@@ -18,6 +18,10 @@ const manifest3 = "/scorm/360/imsmanifest.xml"
 const url4 = "/scorm/bug/"
 const manifest4 = "/scorm/bug/imsmanifest.xml"
 
+// index_lms.html
+const url5 = "/scorm/2004/"
+const manifest5 = "/scorm/2004/imsmanifest.xml"
+
 let settings = {
   logLevel: 4,
   mastery_override: true,
@@ -63,11 +67,6 @@ let json = {
   "interactions": {}
 }
 
-// eslint-disable-next-line no-undef
-window.API = new Scorm12API(settings);
-// eslint-disable-next-line no-undef
-window.API_1484_11 = new Scorm2004API(settings);
-
 function App() {
   const [schemaVersion, setSchemaVersion] = useState("1.2");
   const [currentUrl, setCurrentUrl] = useState(url1);
@@ -86,9 +85,6 @@ function App() {
   }
 
   useEffect(() => {
-    window.API.loadFromJSON(json);
-    window.API_1484_11.loadFromJSON(json);
-
     let request = new XMLHttpRequest();
     request.open("GET", manifest, false);
     request.send();
@@ -103,6 +99,15 @@ function App() {
     setScormIndex(scorm_index);
     setScormLink(currentUrl + scorm_index);
 
+    if (schema_version === "1.2") {
+      // eslint-disable-next-line no-undef
+      window.API = new Scorm12API(settings);
+      window.API.loadFromJSON(json);
+    } else if (schema_version === "2004") {
+      // eslint-disable-next-line no-undef
+      window.API_1484_11 = new Scorm2004API(settings);
+      window.API_1484_11.loadFromJSON(json);
+    }
   }, [currentUrl, scormIndex, manifest]);
 
   const getScormResult = () => {
@@ -155,16 +160,23 @@ function App() {
   }, []);
 
   const onChangeFile = async (val) => {
+    console.log(schemaVersion)
     // use bellow code for handling
     // throwSCORMError : 101: LMS is already finished! (but the last record won't be saved)
     // and it make sure won't run getScormResult() on first render
-    window.API.clear("LMSInitialize");
-    window.API_1484_11.clear("Initialize");
+    
     // re-initialize scorm api
-    // eslint-disable-next-line no-undef
-    window.API = new Scorm12API(settings)
-    // eslint-disable-next-line no-undef
-    window.API_1484_11 = new Scorm2004API(settings);
+    if (schemaVersion === "1.2") {
+      // eslint-disable-next-line no-undef
+      window.API.clear("LMSInitialize");
+      // eslint-disable-next-line no-undef
+      window.API = new Scorm12API(settings)
+    } else if (schemaVersion === "2004") {
+      // eslint-disable-next-line no-undef
+      window.API_1484_11.clear("Initialize");
+      // eslint-disable-next-line no-undef
+      window.API_1484_11 = new Scorm2004API(settings);
+    }
 
     let current_url = "";
     let manifesting = "";
@@ -177,9 +189,12 @@ function App() {
     } else if (val === 3) {
       current_url = url3;
       manifesting = manifest3;
-    } else {
+    } else if (val === 4){
       current_url = url4;
       manifesting = manifest4;
+    } else {
+      current_url = url5;
+      manifesting = manifest5;
     }
 
     setCurrentUrl(current_url);
@@ -193,6 +208,7 @@ function App() {
       <button onClick={() => onChangeFile(2)}>Memancing</button>
       <button onClick={() => onChangeFile(3)}>360</button>
       <button onClick={() => onChangeFile(4)}>bug</button>
+      <button onClick={() => onChangeFile(5)}>2004</button>
       <iframe
         title="scorm"
         src={scormLink}

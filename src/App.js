@@ -36,7 +36,7 @@ let settings = {
 // eslint-disable-next-line no-undef
 window.API = new Scorm12API(settings);
 // eslint-disable-next-line no-undef
-window.API_1484_11 = new Scorm2004API(settings);
+// window.API_1484_11 = new Scorm2004API(settings);
 
 // element write only list : exit, session_time
 // default json
@@ -162,9 +162,9 @@ class App extends React.Component {
 
   onTrackScorm2004 = () => {
     console.log("on scorm 2004")
-    window.API_1484_11.on("SetValue.cmi.* ", function (CMIElement, value) {
-      console.log("tracking 2004", value)
-    });
+    // window.API_1484_11.on("SetValue.cmi.* ", function (CMIElement, value) {
+    //   console.log("tracking 2004", value)
+    // });
   }
 
   onChangeFile = async (val) => {
@@ -179,7 +179,7 @@ class App extends React.Component {
     // eslint-disable-next-line no-undef
     window.API = new Scorm12API(settings)
     // eslint-disable-next-line no-undef
-    window.API_1484_11 = new Scorm2004API(settings);
+    // window.API_1484_11 = new Scorm2004API(settings);
 
     if (val === 1) {
       currentUrl = url1;

@@ -1,0 +1,29 @@
+﻿WEBVTT
+
+00:00:00.200 --> 00:00:04.620
+Based on lessons learned and client
+feedback, we redesigned our player
+
+00:00:04.620 --> 00:00:09.080
+to include a more modern design
+and a better user experience.
+
+00:00:09.700 --> 00:00:13.940
+While our training modules are bundled
+into a SCORM package they do not
+
+00:00:14.040 --> 00:00:17.400
+only rely on SCORM calls to
+communicate with the LMS.
+
+00:00:17.760 --> 00:00:21.980
+They also use local storage as a backup
+in case of SCORM API failure.
+
+00:00:22.380 --> 00:00:25.940
+The learner's preferences are also
+saved locally so they do not need
+
+00:00:26.000 --> 00:00:29.260
+to adjust settings for every
+module they are assigned.
